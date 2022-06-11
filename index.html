@@ -8,17 +8,17 @@
   </head>
   <body>
     <div class="minions">
-      <minion class="minion" onclick="toggleSuperman()"></minion>
-      <minion class="minion" onclick="toggleSuperman()"></minion>
-      <minion class="minion" onclick="toggleSuperman()"></minion>
-      <minion class="minion" onclick="toggleSuperman()"></minion>
-      <minion class="minion" onclick="toggleSuperman()"></minion>
+      <minion class="minion" onclick="toggleSuperman(0)"></minion>
+      <minion class="minion" onclick="toggleSuperman(1)"></minion>
+      <minion class="minion" onclick="toggleSuperman(2)"></minion>
+      <minion class="minion" onclick="toggleSuperman(3)"></minion>
+      <minion class="minion" onclick="toggleSuperman(4)"></minion>
     </div>
 
     <script>
-      function toggleSuperman() {
-        const minion = document.querySelector(".minion");
-        minion.classList.toggle("superman");
+      function toggleSuperman(position) {
+        const minion = document.querySelectorAll(".minion");
+        minion[position].classList.toggle("superman");
       }
     </script>
 
